@@ -156,7 +156,7 @@ public class TerminalTest extends TerminalTestCase {
 		assertEquals(119, mTerminal.mForeColor);
 		assertEquals(TextStyle.COLOR_INDEX_BACKGROUND, mTerminal.mBackColor);
 		enterString("\033[48;5;129m");
-		assertEquals(119, mTerminal.mForeColor);
+		assertEquals(9990, mTerminal.mForeColor);
 		assertEquals(129, mTerminal.mBackColor);
 
 		// Invalid parameter:
