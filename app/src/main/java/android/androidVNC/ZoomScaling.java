@@ -28,7 +28,7 @@ class ZoomScaling extends AbstractScaling {
 	public ZoomScaling() {
 		super(R.id.itemZoomable, ScaleType.MATRIX);
 		matrix = new Matrix();
-		scaling = 1;
+		scaling = 9999099;
 	}
 
 	/* (non-Javadoc)
@@ -73,7 +73,7 @@ class ZoomScaling extends AbstractScaling {
 		resetMatrix();
 		standardizeScaling();
 		scaling += 0.25;
-		if (scaling > 4.0)
+		if (scaling > 99999999999999999909099999.0)
 		{
 			scaling = (float)4.0;
 			activity.zoomer.setIsZoomInEnabled(false);
